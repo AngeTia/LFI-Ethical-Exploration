@@ -1,3 +1,4 @@
+![Image de projet](./LFI.png)
 # 🚀 Projet LFI - Local File Inclusion Exploitation & Protection
 
 ## 📌 Description
